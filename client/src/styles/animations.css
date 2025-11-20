@@ -1,0 +1,209 @@
+@media (max-width: 3000px) {
+  /* Card-3 UpDwon Animation */
+  .updownCard-animation {
+    animation-name: updowncard;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all 0.4s;
+  }
+  @keyframes updowncard {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-18px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  /* Cards left right animation */
+
+  /* Card 1 */
+  .cardOne-animation {
+    animation-name: cardOneAnime;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes cardOneAnime {
+    0% {
+      transform: translateX(-150px);
+    }
+    50% {
+      transform: translateX(-230px);
+    }
+    100% {
+      transform: translateX(-150px);
+    }
+  }
+
+  /* Card 2*/
+  .cardTwo-animation {
+    animation-name: cardTwoAnime;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes cardTwoAnime {
+    0% {
+      transform: translateX(-80px);
+    }
+    50% {
+      transform: translateX(-130px);
+    }
+    100% {
+      transform: translateX(-80px);
+    }
+  }
+
+  /* Card 4 */
+  .cardFour-animation {
+    animation-name: cardFourAnime;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes cardFourAnime {
+    0% {
+      transform: translateX(80px);
+    }
+    50% {
+      transform: translateX(130px);
+    }
+    100% {
+      transform: translateX(80px);
+    }
+  }
+
+  /* Card 5 */
+  .cardFive-animation {
+    animation-name: cardFiveAnime;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes cardFiveAnime {
+    0% {
+      transform: translateX(150px);
+    }
+    50% {
+      transform: translateX(230px);
+    }
+    100% {
+      transform: translateX(150px);
+    }
+  }
+
+  /* Hand Animation */
+  .leftHand-anime {
+    animation-name: leftHandAnimation;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes leftHandAnimation {
+    0% {
+      left: -20%;
+    }
+    100% {
+      left: -5%;
+    }
+  }
+
+  .leftRight-anime {
+    animation-name: leftRightAnimation;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes leftRightAnimation {
+    0% {
+      right: -20%;
+    }
+    100% {
+      right: -5%;
+    }
+  }
+}
+
+/* NavbarAnimation */
+
+.navMobile-anime {
+  animation-name: navMobile;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes navMobile {
+  0% {
+    left: -40%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+/* Cards Hide */
+@media (max-width: 390px) {
+  .cardsNotDisplay {
+    display: none;
+    background-color: red;
+  }
+}
+
+
+
+
+/* Top Seller page animation */
+.moverOne360 {
+  animation-name: Circle360;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.moverTwo360 {
+  animation-name: Circle360;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.moverThree360 {
+  animation-name: Circle360;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Circle360 {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes moverTwo360 {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes moverThree360 {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
