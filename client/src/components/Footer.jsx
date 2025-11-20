@@ -7,7 +7,7 @@ import tiktok from "../assets/Footer/icons/tik.svg";
 import redit from "../assets/Footer/icons/redit.svg";
 import github from "../assets/Footer/icons/git.svg";
 import message from "../assets/Footer/icons/message.svg";
-import logofooter from "../assets/Footer/icons/logoWhitefooter.svg";
+// import logofooter from ";
 import tracked from "../assets/Footer/icons/trackedfooter.svg";
 import gl from "../assets/Footer/images/GridLeft.webp";
 import gr from "../assets/Footer/images/GridRight.webp";
@@ -47,7 +47,7 @@ const Footer = () => {
               <div className="w-[40%] max-lg:w-full flex justify-center ">
                 <a href="/">
 
-                  <img src={logofooter} alt="" className="size-43 max-lg:size-34 cursor-pointer" />
+                  <img src={'../src/assets/Navbar/logo.png'} alt="" className="size-43 max-lg:size-34 cursor-pointer **invert** grayscale-100" />
                 </a>
               </div>
 

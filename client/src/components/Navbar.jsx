@@ -1,4 +1,4 @@
-import Navlogo from "../assets/Navbar/logo.svg"
+import Navlogo from "../assets/Navbar/logo.png"
 import favicon from "../assets/Navbar/favicon.svg"
 import lineVector from "../assets/Modal/icons/line-vector.svg"
 import { Menu, X } from "lucide-react";
@@ -11,23 +11,15 @@ import logo3 from '../assets/Modal/images/logo3.webp'
 import logo4 from '../assets/Modal/images/logo4.webp'
 import wallet from '../assets/Navbar/wallet.webp'
 import profileimg from '../assets/Navbar/profileimg.webp'
-
 import topGridLeft from "../assets/Header/images/topGridLeft.webp"
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
-
-
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Modal } from 'antd';
-
 const Navbar = () => {
-
     const { pathname } = useLocation()
-
     const [menuOpen, setmenuOpen] = useState(false);
     const toggleNavbar = () => {
         setmenuOpen(!menuOpen);
     };
-
-
     // Ant-Desing Modal
     const [isModalOpen, setIsModalOpen] = useState(false);
     const showModal = () => {
@@ -39,10 +31,7 @@ const Navbar = () => {
     const handleCancel = () => {
         setIsModalOpen(false);
     };
-
-
     const navigate = useNavigate();
-
     return (
         <nav className="flex justify-center ">
             <div className="absolute left-0 top-0 z-0 max-lg:hidden ">
@@ -52,7 +41,7 @@ const Navbar = () => {
                 <div className="">
                     <div className="flex justify-between items-center relative z-100">
                         <a href="/" className="cursor-pointer">
-                            <img src={Navlogo} alt="" className="max-lg:size-14 cursor-pointer" />
+                            <img src={Navlogo} alt="" className="max-lg:size-14 h-[80px] w-[90px] cursor-pointer" />
 
                         </a>
                         <div className="max-lg:hidden lg:flex sm:gap-4 lg:gap-8 navLinks">
@@ -69,13 +58,13 @@ const Navbar = () => {
                         </div>
 
                         {
-                            pathname == '/create-nft-page' || pathname == '/artist-profile-page' || pathname == '/artist-profile-page-setting' || pathname == '/create-nft' || pathname == '/create-single-nft'  || pathname == '/create-nft-collection' || pathname == '/choose-existing-collection' || pathname == '/sell-method-page' ? (
+                            pathname == '/create-nft-page' || pathname == '/artist-profile-page' || pathname == '/artist-profile-page-setting' || pathname == '/create-nft' || pathname == '/create-single-nft' || pathname == '/create-nft-collection' || pathname == '/choose-existing-collection' || pathname == '/sell-method-page' ? (
 
                                 <div className="flex gap-x-3">
 
                                     <div onClick={showModal}><img src={wallet} alt="" className="cursor-pointer" /></div>
 
-                                    <div onClick={()=>{navigate('/artist-profile-page')}}><img src={profileimg} alt="" className="cursor-pointer" /></div>
+                                    <div onClick={() => { navigate('/artist-profile-page') }}><img src={profileimg} alt="" className="cursor-pointer" /></div>
                                 </div>
 
                             ) :
@@ -87,10 +76,9 @@ const Navbar = () => {
 
                         }
 
-
                         {/* Ant-Desing Modal */}
                         <div className="ant-modal-main absolute">
-                            <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                            <Modal centered open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
                                 <div className="flex flex-col items-center gap-2 pt-4">
                                     <div className="modal-top-section flex flex-col items-center gap-1 pb-2">
                                         <h3 className="ant-main-text">Connect your wallet</h3>
@@ -101,29 +89,45 @@ const Navbar = () => {
 
                                     {/* Wallets */}
                                     <div className="modal-bottom-section flex flex-col gap-2">
-                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer ">
+                                        <Link
+                                            to="https://portfolio.metamask.io/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer ">
                                             <img src={logo1} alt="" />
                                             <p className="text-para-light font-light">Pera</p>
-                                        </div>
+                                        </Link>
 
-                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer">
+                                        <Link
+                                            to="https://portfolio.metamask.io/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer">
                                             <img src={logo2} alt="" />
                                             <p className="text-para-light font-light ">Defly</p>
 
-                                        </div>
+                                        </Link>
 
 
-                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer">
+                                        <Link
+                                            to="https://portfolio.metamask.io/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer">
                                             <img src={logo3} alt="" />
                                             <p className="text-para-light font-light">Daffi</p>
 
-                                        </div>
+                                        </Link>
 
-                                        <div className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer">
+                                        <Link
+                                            to="https://portfolio.metamask.io/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex gap-4 items-center border-main border-2 pl-4 py-2 rounded-md w-[250px] cursor-pointer">
                                             <img src={logo4} alt="" />
                                             <p className="text-para-light font-light">WalletConnect</p>
 
-                                        </div>
+                                        </Link>
                                     </div>
                                 </div>
                             </Modal>
@@ -143,7 +147,7 @@ const Navbar = () => {
                         <div className="lg:hidden fixed bg-inverted  py-5 px-10 flex flex-col gap-8 z-100 navMobile-anime h-[100%] top-0 w-[270px] left-0 bottom-0 transition-all transition-discrete delay-1000">
                             <div className="flex gap-1 items-center">
                                 <a href="/">
-                                    <img src={Navlogo} alt="logo" className="max-lg:size-16" />
+                                    <img src={Navlogo} alt="logo" className="max-lg:size-16 h-[70px] w-[100px] " />
                                 </a>
                             </div>
                             <div className="flex flex-col gap-3">
