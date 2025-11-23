@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-frame: #fff9f9;
+  --color-main: #fe0101;
+  --color-secondary: #2b2b2b;
+  --color-inverted: #ffffff;
+  --color-light: #808080;
+  --color-muted: #e7e7e7;
+  --color-para-light: #6b6b6b;
+  --color-sold: rgba(255, 255, 255, 0.8);
+  --breakpoint-3xl: 1700px;
+  --color-soldbtn: rgba(253, 253, 253, 0.15);
+  --color-refresh: #707070;
+  --color-boorder: #e7e7e7;
+}
+
+@font-face {
+  font-family: "ApexMk2-Regular";
+  src: url("./assets/fonts/ApexMk2-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ApexMk2-BoldExtended";
+  src: url("./assets/fonts/ApexMk2-BoldExtended.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ApexMk2-LightCondensed";
+  src: url("./assets/fonts/ApexMk2-LightCondensed.otf") format("opentyp");
+}
+
+@font-face {
+  font-family: "Roboto", serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+}
+
+.soldbg {
+  background: linear-gradient(318deg, #fd0000 26.88%, #bb5151 105.85%);
+}
+
+.background-grad {
+  border-radius: 8px;
+  background: linear-gradient(318deg, #fd0000 26.88%, #ff9292 105.85%);
+}
+
+.menuOpen-grad {
+  background: linear-gradient(318deg, #fd0000 26.88%, #fd00ff 105.85%);
+}
+
+.border-grd {
+  border-radius: 8px;
+  border: 1.8px solid var(--color-main, #fd0000);
+}
+
+.footer-bg {
+  border-radius: 20px;
+  background: linear-gradient(276deg, #fd0000 -0.05%, #ff9292 201.36%);
+}
+
+.footer-border {
+  border-radius: 15px;
+  border: 1px solid var(--color-main, #fd0000);
+}
+
+.faq-border {
+  border-radius: 20px;
+}
+
+input {
+  outline: none;
+}
+
+.navLinks .active {
+  color: var(--color-main);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+
+/* ---------------------- Custom Scrollbar  ----------------------- */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-main);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-inverted);
+}

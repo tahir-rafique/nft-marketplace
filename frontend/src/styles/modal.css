@@ -1,0 +1,35 @@
+.ant-modal-content {
+  width: 350px;
+}
+
+.ant-main-text {
+  font-size: 24px;
+  font-family: "ApexMk2-Regular", sans-serif;
+  text-align: center;
+}
+
+.ant-modal-wrap {
+  /* background-color: red; */
+  position: relative;
+}
+
+.ant-main-body {
+  padding-bottom: 10px;
+  background-color: red;
+}
+
+.ant-modal-footer {
+  display: none;
+}
+
+.modal-Styles-cnftp {
+  position: relative;
+  top: 10px;
+}
+
+.ant-modal-content {
+  /* background-color: red; */
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+}

@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+html,
+body {
+  font-family: "ApexMk2-Regular", sans-serif;
+  background-color: var(--color-frame);
+}
+
+h1 {
+  font-size: 96px;
+}
+h2 {
+  font-size: 64px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 18px;
+}
+p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.text-s {
+  font-size: 18px;
+}
+
+.text-excp {
+  font-size: 16px;
+}
+
+.text-tarits {
+  font-size: 10px;
+}
+
+.text-l {
+  font-size: 12px;
+}
+
+.text-xs {
+  font-size: 11px;
+}
+
+.navbtn-size {
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbtn-border {
+  border-radius: 8px;
+}
+
+.font-secondary {
+  font-family: "Roboto", serif;
+}
+
+.line-height-l {
+  line-height: 115%;
+}
+.line-height-s {
+  line-height: 90%;
+}
+
+.acutionLargerfont {
+  font-size: 150px;
+}
+
+.nftTextLarger {
+  font-size: 220px;
+}
+.collectionTextLarger {
+  font-size: 90px;
+}
+.seller-text {
+  font-size: 128px;
+  font-weight: 700;
+}
+
+@media (max-width: 1500px) {
+  h1 {
+    font-size: 56px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  .navbtn-size {
+    font-size: 18px;
+  }
+  p {
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .acutionLargerfont {
+    font-size: 110px;
+  }
+
+  .nftTextLarger {
+    font-size: 180px;
+  }
+
+  .collectionTextLarger {
+    font-size: 60px;
+  }
+
+  .seller-text{
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 1070px) {
+  h1 {
+    font-size: 46px;
+  }
+  h2 {
+    font-size: 33px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  .navbtn-size {
+    font-size: 17px;
+  }
+  p {
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .nftTextLarger {
+    font-size: 110px;
+  }
+
+  .collectionTextLarger {
+    font-size: 60px;
+  }
+
+  .seller-text{
+    font-size: 78px;
+  }
+}
+
+@media (max-width: 770px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  .navbtn-size {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .acutionLargerfont {
+    font-size: 60px;
+  }
+
+  .nftTextLarger {
+    font-size: 90px;
+  }
+
+  .collectionTextLarger {
+    font-size: 40px;
+  }
+
+  .text-sellerpage{
+font-size: 10px;
+  }
+}
